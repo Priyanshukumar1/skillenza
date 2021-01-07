@@ -6,17 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
+<style>
+    img {
+        border-radius: 50%;
+        margin-left: 2cm;
+        margin-bottom: 2cm;
+    }
+
+    header,
+    footer {
+        padding: 60px;       
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    hr {
+        background-color: black;
+        line-height: 0.7;
+    }
+
+    table {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        background-color: #f2f2f2;
+    }
+    body, table, input, textarea {
+    background: linear-gradient(-45deg,rgb(238,119,82,0.3) , #e73c7e, #23a6d5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+label { display: table-cell; }
+input { display: table-cell; }
+
+</style>
 
 <body>
-    <header> <h2>
-        <p style="text-align: center;"><u>Hello, Welcome to my Portfolio.</u></p></h2>
-    </header> <br>
-    <h1><u>Divi Osho</u></h1><br>
+    <header>
+        <p>Hello, <br> Welcome to my Portfolio.</p>
+    </header> <hr>
+    <h1>
+        <div>
+            <u>Divi Osho</u>
+    </h1>
     <img src="divi.jpg" alt="diviosho" width="150" height="150" align="right">
     B.Tech undergraduate at Kalinga Institute of Industrial Technology(KIIT) <br> Currently in 4th semester, IT <br>
     From Patna, Bihar <br> Contact: <a href="mailto:diviosho98@gmail.com">diviosho98@gmail.com</a>
-    <br>
-    <h2><u>Education</u></h2> <br>
+    <br></div>
+    <div>
+        <h2>Education</h2>
+        <hr> <br>
+    </div>
     <table border="2" align="center" aria-setsize="5">
         <tr>
             <td align="centre">Matriculation</td>
@@ -34,7 +77,9 @@
             <td align="centre">8.66 CGPA(till 3rd sem)</td>
         </tr>
     </table>
-    <h2><u>Skills</u></h2> <br>
+    <h2>Skills
+        <hr>
+    </h2> <br>
     <ul>
         <li>C</li>
         <li>C++</li>
@@ -43,14 +88,18 @@
         <li>Algorithms</li>
         <li>HTML</li>
     </ul>
-    <h2><u>Other useful links</u></h2>
+    <h2>Other useful links
+        <hr>
+    </h2>
     <ul>
         <li><a href="https://www.hackerrank.com/diviosho98">Hackerrank</a></li>
         <li><a href="https://www.linkedin.com/in/divi-osho-054006148/">Linkedin</a></li>
         <li><a href="https://github.com/diviosho98">Github</a>
         </li>
     </ul>
-    <h2><u>Contact me</u></h2> <br>
+    <h2>Contact me
+        <hr>
+    </h2> <br>
     <form>
         <label>First name</label>
         <input type="text"> <br> <br>
@@ -61,8 +110,9 @@
         <label>Write message</label> <br><textarea name="" id="" cols="20" rows="5"></textarea> <br> <br>
         <input type="submit" value="Submit Now"> <input type="reset" value="Reset All">
     </form>
-    <br>
-    <footer><video  width="1200" height="100" src="thankyou.mov" autoplay loop></video></footer>
+    <br> <hr>
+    <footer><video width="1150" height="100" src="thankyou.mov" autoplay loop></video> Thank you</footer>
+   
 </body>
 
 </html>
